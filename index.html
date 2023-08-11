@@ -5,37 +5,222 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Day # X: Circular Progress Bar</title>
+    <title>#100daysofsummercode | Homepage</title>
 </head>
 <body>
-    
-    <div class="container">
-        <div class="circular-progress">
-            <div class="value-container">0%</div>
+
+    <header>
+        <nav>
+            <div class="nav-logo">
+                <a href="https://veeteefunk.github.io/100daysofsummercode/"><img width="220px" src="100daysofsummercode_logo.jpg" alt=""></a> 
+            </div>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/victor-marin-viloria/" target="_blank">About</a></li>
+                <li><a href="mailto:victormarinviloria@gmail.com">Contact</a></li>
+                <li><a href="https://github.com/veeteefunk" target="_blank">GitHub</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+    <section class="title">
+        <div class="title-text">
+            <h1>Hi!</h1>
+            <h4>I'm Victor Marin Viloria and my summer will be dedicated to making</h4>
+            <h2><b>100 websites in 100 days.</b></h2>
+            <h4>You can also follow this project on the <a href="https://100daysofsummercode.blogspot.com/"
+                target="_blank">blog</a></h4>
         </div>
-    </div>
+        <hr>
+    </section>
 
-    <script>
-
-        let progressBar = document.querySelector(".circular-progress")
-        let valueContainer = document.querySelector(".value-container")
-
-        let progressValue = 0
-        let progressEndValue = 100
-        let speed = 500
-
-        let progress = setInterval(() => {
-            progressValue++
-            valueContainer.textContent = `${progressValue}%`
-            progressBar.style.background = `conic-gradient(
-                #4d5bf9 ${progressValue * 3.6}deg,
-                #cadcff ${progressValue * 3.6}deg
-            )`
-            if (progressValue == progressEndValue) {
-                clearInterval(progress)
-            }
-        }, speed)
-
-    </script>
+    <section class="days">
+        <ul>
+            <li>Day # 1: <a href="index.html">Homepage</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/06/pilot.html"
+                target="_blank">Blog Post</a>]</li>          
+            <li>Day # 2: <a href="https://veeteefunk.github.io/day2_blog_post/">Blog Post Template</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/06/day-2-blog-post-template.html"
+                target="_blank">Blog Post</a>]</li>          
+            <li>Day # 3: <a href="https://veeteefunk.github.io/day3_head/">The HTML head element</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/06/day-3-html-head-element.html"
+                target="_blank">Blog Post</a>]</li>          
+            <li>Day # 4: <a href="https://veeteefunk.github.io/day4_navbar/">Navbar</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/06/day-4-navbar.html"
+                target="_blank">Blog Post</a>]</li>          
+            <li>Day # 5: <a href="https://veeteefunk.github.io/day5_accordion/">Accordion</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/06/day-5-accordion.html"
+                target="_blank">Blog Post</a>]</li>          
+            <li>Day # 6: <a href="https://veeteefunk.github.io/day6_hamburger/">Hamburger Menu</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/06/day-6-hamburger-menu.html"
+                target="_blank">Blog Post</a>]</li>          
+            <li>Day # 7: <a href="https://veeteefunk.github.io/day7_image_slider/">Image Slider</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/06/day-7-image-slider.html"
+                target="_blank">Blog Post</a>]</li>          
+            <li>Day # 8: <a href="https://veeteefunk.github.io/day8_inspiration/">Inspiration</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/06/day-8-inspiration.html"
+                target="_blank">Blog Post</a>]</li>          
+            <li>Day # 9: <a href="https://veeteefunk.github.io/day9_dropdown/">Dropdown</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/06/day-9-dropdown-menu.html"
+                target="_blank">Blog Post</a>]</li>          
+            <li>Day # 10: <a href="https://veeteefunk.github.io/day10_polaroid/">Polaroid</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/06/day-10-style-image-as-polaroid-picture.html"
+                target="_blank">Blog Post</a>]</li>          
+            <li>Day # 11: <a href="https://veeteefunk.github.io/day11_background_pattern/">Background Pattern</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/06/day-11-background-pattern.html"
+                target="_blank">Blog Post</a>]</li>          
+            <li>Day # 12: <a href="https://veeteefunk.github.io/day12_typewriter/">Typewriter Effect</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/06/day-12-typewriter-effect.html"
+                target="_blank">Blog Post</a>]</li>          
+            <li>Day # 13: <a href="https://veeteefunk.github.io/day13_rotating_words/">Rotating Words</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/06/day-13-rotating-words.html"
+                target="_blank">Blog Post</a>]</li>          
+            <li>Day # 14: <a href="https://veeteefunk.github.io/day14_highlight/">Highlight</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/06/day-14-highlight-searched-text.html"
+                target="_blank">Blog Post</a>]</li>          
+            <li>Day # 15: <a href="https://veeteefunk.github.io/day_15_inspiring_notifications/">Inspiring Notifications</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/06/day-15-inspiring-notifications.html"
+                target="_blank">Blog Post</a>]</li>          
+            <li>Day # 16: <a href="https://veeteefunk.github.io/day16_earrings/">Earrings</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/06/day-16-earrings-animation.html"
+                target="_blank">Blog Post</a>]</li>          
+            <li>Day # 17: <a href="https://veeteefunk.github.io/day17_double_click/">Double Click</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/06/day-17-double-click.html"
+                target="_blank">Blog Post</a>]</li>          
+            <li>Day # 18: <a href="https://veeteefunk.github.io/day18_paellitas/">Paellitas Menu</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/06/day-18-paellitas-menu.html"
+                target="_blank">Blog Post</a>]</li>          
+            <li>Day # 19: <a href="https://veeteefunk.github.io/day19_checkbox/">Checkbox</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/06/day-19-checkbox-animation.html"
+                target="_blank">Blog Post</a>]</li>          
+            <li>Day # 20: <a href="https://veeteefunk.github.io/day20_flashlight/">Flashlight</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/07/day-20-flashlight.html"
+                target="_blank">Blog Post</a>]</li>          
+            <li>Day # 21: <a href="https://veeteefunk.github.io/day21_automatic_text/">Automatic Text</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/07/day-21-automatic-text.html"
+                target="_blank">Blog Post</a>]</li>          
+            <li>Day # 22: <a href="https://veeteefunk.github.io/day22_ravel_live/">Ravel Live</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/07/day-22-ravel-live.html"
+                target="_blank">Blog Post</a>]</li>          
+            <li>Day # 23: <a href="https://veeteefunk.github.io/day23_rotating_menu/">Rotating Menu</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/07/day-23-rotating-menu.html"
+                target="_blank">Blog Post</a>]</li>          
+            <li>Day # 24: <a href="https://veeteefunk.github.io/day24_range_slider/">Range Slider</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/07/day-24-range-slider.html"
+                target="_blank">Blog Post</a>]</li>          
+            <li>Day # 25: <a href="https://veeteefunk.github.io/day25_pour_wine/">Pour wine</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/07/day-25-pour-more-wine.html"
+                target="_blank">Blog Post</a>]</li>          
+            <li>Day # 26: <a href="https://veeteefunk.github.io/day26_checkboxes_tiles/">Checkboxes tiles</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/07/day-26-checkboxes-as-tiles.html"
+                target="_blank">Blog Post</a>]</li>          
+            <li>Day # 27: <a href="https://veeteefunk.github.io/day27_moving_triangles/">Moving triangles</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/07/day-27-moving-triangles.html"
+                target="_blank">Blog Post</a>]</li>          
+            <li>Day # 28: <a href="https://veeteefunk.github.io/day28_inverted_border/">Inverted border</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/07/day-28-inverted-border.html"
+                target="_blank">Blog Post</a>]</li>          
+            <li>Day # 29: <a href="https://veeteefunk.github.io/day29_sticky_nav_scroll/">Sticky nav scroll</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/07/day-29-sticky-nav-scroll.html"
+                target="_blank">Blog Post</a>]</li>          
+            <li>Day # 30: <a href="https://veeteefunk.github.io/day30_blockquote/">Blockquote</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/07/day-30-custom-blockquote.html"
+                target="_blank">Blog Post</a>]</li>          
+            <li>Day # 31: <a href="https://veeteefunk.github.io/day31_corgi_facts/">Corgi facts</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/07/day-31-corgi-facts.html"
+                target="_blank">Blog Post</a>]</li>          
+            <li>Day # 32: <a href="https://veeteefunk.github.io/day32_change_background/">Change background</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/07/day-32-change-background.html"
+                target="_blank">Blog Post</a>]</li>          
+            <li>Day # 33: <a href="https://veeteefunk.github.io/day33_corgi_ranking/">Corgi ranking</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/07/day-33-corgi-ranking.html"
+                target="_blank">Blog Post</a>]</li>          
+            <li>Day # 34: <a href="https://veeteefunk.github.io/day34_rounded_card/">Rounded card</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/07/day-34-rounded-card.html"
+                target="_blank">Blog Post</a>]</li>          
+            <li>Day # 35: <a href="https://veeteefunk.github.io/day35_flip_book/">Flip book</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/07/day-35-flip-book.html"
+                target="_blank">Blog Post</a>]</li>          
+            <li>Day # 36: <a href="https://veeteefunk.github.io/day36_SLJ_todo/">SLJ todo</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/07/day-36-samuel-l-jackson-to-do-list.html"
+                target="_blank">Blog Post</a>]</li>          
+            <li>Day # 37: <a href="https://veeteefunk.github.io/day37_scroll_snap/">Scroll snap</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/07/day-37100-scroll-snap.html"
+                target="_blank">Blog Post</a>]</li>          
+            <li>Day # 38: <a href="https://veeteefunk.github.io/day38_blurry_load/">Blurry load</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/07/day-38100-x-blurry-load.html"
+                target="_blank">Blog Post</a>]</li>          
+            <li>Day # 39: <a href="https://veeteefunk.github.io/day39_prince_hearts/">Prince hearts</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/07/day-39100-prince-hearts.html"
+                target="_blank">Blog Post</a>]</li>          
+            <li>Day # 40: <a href="https://veeteefunk.github.io/day40_colored_squares/">Colored squares</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/07/day-40-colored-squares.html"
+                target="_blank">Blog Post</a>]</li>          
+            <li>Day # 41: <a href="https://veeteefunk.github.io/day40_hover_word/">Hover word</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/07/day-41-hover-word.html"
+                target="_blank">Blog Post</a>]</li>          
+            <li>Day # 42: <a href="https://veeteefunk.github.io/day42_ny_paris/">NY Paris</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/07/day-42-ny-paris.html"
+                target="_blank">Blog Post</a>]</li>          
+            <li>Day # 43: <a href="https://veeteefunk.github.io/day43_card_drawer/">Card drawer</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/07/day-43-card-drawer.html"
+                target="_blank">Blog Post</a>]</li>          
+            <li>Day # 44: <a href="https://veeteefunk.github.io/day44_read_more/">Read more</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/07/day-44-read-more.html"
+                target="_blank">Blog Post</a>]</li>          
+            <li>Day # 45: <a href="https://veeteefunk.github.io/day45_tooltip/">Tooltip</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/07/day-45-tooltip.html"
+                target="_blank">Blog Post</a>]</li>          
+            <li>Day # 46: <a href="https://veeteefunk.github.io/day46_curvy_div/">Curvy div</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/07/day-46-curvy-div.html"
+                target="_blank">Blog Post</a>]</li>          
+            <li>Day # 47: <a href="https://veeteefunk.github.io/day47_icon_hover/">Icon hover</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/07/day-47-icon-hover.html"
+                target="_blank">Blog Post</a>]</li>          
+            <li>Day # 48: <a href="https://veeteefunk.github.io/day48_ripple_button/">Ripple button</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/07/day-48-ripple-button.html"
+                target="_blank">Blog Post</a>]</li>                    
+            <li>Day # 49: <a href="https://veeteefunk.github.io/day49_glass_languages/">Glass languages</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/07/day-49-glass-languages.html"
+                target="_blank">Blog Post</a>]</li>                    
+            <li>Day # 50: <a href="https://veeteefunk.github.io/day50_animated_card/">Animated card</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/07/day-50-animated-card.html"
+                target="_blank">Blog Post</a>]</li>                    
+            <li>Day # 51: <a href="https://veeteefunk.github.io/day51_crime_scene/">Crime scene</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/07/day-51-crime-scene.html"
+                target="_blank">Blog Post</a>]</li>                    
+            <li>Day # 52: <a href="https://veeteefunk.github.io/day52_beating_heart/">Beating heart</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/08/day-52-beating-heart.html"
+                target="_blank">Blog Post</a>]</li>                    
+            <li>Day # 53: <a href="https://veeteefunk.github.io/day53_icon_text/">Icon text</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/08/day-53-icon-text.html"
+                target="_blank">Blog Post</a>]</li>                    
+            <li>Day # 54: <a href="https://veeteefunk.github.io/nubes-de-altamira/index.html">My music</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/08/day-54-website-for-my-new-album.html"
+                target="_blank">Blog Post</a>]</li>                    
+            <li>Day # 55: <a href="https://veeteefunk.github.io/day55_scroll_animation/">Scroll animation</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/08/day-55-scroll-animation.html"
+                target="_blank">Blog Post</a>]</li>                    
+            <li>Day # 56: <a href="https://veeteefunk.github.io/day56_popup/">Popup</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/08/day-56-popup.html"
+                target="_blank">Blog Post</a>]</li>                    
+            <li>Day # 57: <a href="https://veeteefunk.github.io/day57_color_picker/">Color picker</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/08/day-57-color-picker.html"
+                target="_blank">Blog Post</a>]</li>                    
+            <li>Day # 58: <a href="https://veeteefunk.github.io/day58_triangle_loader/">Triangle loader</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/08/day-58-triangle-loader.html"
+                target="_blank">Blog Post</a>]</li>                    
+            <li>Day # 59: <a href="https://veeteefunk.github.io/day59_profile_border/">Profile border</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/08/day-59-profile-border.html"
+                target="_blank">Blog Post</a>]</li>                    
+            <li>Day # 60: <a href="https://veeteefunk.github.io/day60_line_hover/">Line hover</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/08/day-60-line-hover.html"
+                target="_blank">Blog Post</a>]</li>                    
+            <li>Day # 61: <a href="https://veeteefunk.github.io/day61_circular_progress/">Circular progress</a> - [<a class="blog" 
+                href="https://100daysofsummercode.blogspot.com/2023/08/day-61-circular-progress.html"
+                target="_blank">Blog Post</a>]</li>                    
+        </ul>
+    </section>
+    
 </body>
 </html>

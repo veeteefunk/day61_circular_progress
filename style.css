@@ -1,49 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    height: 100vh;
-    background-color: darkblue;
+header {
+    font-family: "Montserrat", sans-serif;
 }
 
-.container {
-    height: 400px;
-    width: 400px;
-    background-color: #fff;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    top: 50%;
-    left: 50%;
-    border-radius: 8px;
-    box-shadow: 20px 20px 40px rgba(60,60, 150, 0.25);
-    display: grid;
-    place-items: center;
+header hr {
+    border-top: 1px solid #AC8181;
 }
 
-.circular-progress {
-    position: relative;
-    height: 250px;
-    width: 250px;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
+nav {
+    display: flex;
+    justify-content: space-between;
 }
 
-.circular-progress::before {
-    content: "";
-    position: absolute;
-    height: 84%;
-    width: 84%;
-    background-color: #fff;
-    border-radius: 50%;
+nav .nav-logo {
+    padding: 1rem 2rem;
 }
 
-.value-container {
-    position: relative;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 50px;
-    color: #231c3d;
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li {
+    padding: 0 0.8rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #592693;
+}
+
+.title {
+    font-family: "Montserrat", sans-serif;
+}
+
+section .title-text {
+    margin: 1rem 4rem 2rem;
+}
+
+section .title-text h1,
+section .title-text h2 {
+    color: #1d4e89;
+}
+
+section .title-text h2,
+section .title-text h4 {
+    padding: 0.2rem 0;
+}
+
+section .title-text h1 {
+    font-size: 4.8rem;
+}
+
+section .title-text h2 {
+    font-size: 2rem;
+}
+
+section .title-text h4 {
+    font-size: 1.18rem;
+    color: #555555;
+}
+
+.title hr {
+    border-top: 1px solid #AC8181;
+    margin: 0 4rem;
+}
+
+.days {
+    margin: 2rem 3.8rem 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.days ul li a {
+    color: #00b2ca;
+}
+
+.days ul li a.blog {
+    color: #1d4e89;
+    text-decoration: none;
+}
+
+.days ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: initial;
+}
+
+.days ul li {
+    margin: 0.1rem;
+    color: #555555;
 }
